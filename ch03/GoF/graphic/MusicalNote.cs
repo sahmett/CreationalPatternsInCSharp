@@ -15,11 +15,12 @@ namespace Gof.Graphic
 
         public override void Draw(Position position)
         {
-            // Implementation specific to drawing a musical note
+            Console.WriteLine($"Drawing {GetType().Name}: {name} (Note: {note}, Octave: {octave}, Duration: {duration})");
         }
 
         public override Graphic Clone()
         {
+            Console.WriteLine($"Cloning {GetType().Name}: {name}");
             return new MusicalNote(name, note, octave, duration);
         }
     }

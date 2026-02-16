@@ -8,6 +8,7 @@ namespace Gof.Graphic
 
         public override void Maniplate()
         {
+            Console.WriteLine("--- RotateTool Manipulate ---");
             Graphic graphic = (Graphic)prototype.Clone();
             graphic.Draw(new Position());
         }

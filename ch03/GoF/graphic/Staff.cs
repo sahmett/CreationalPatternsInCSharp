@@ -11,11 +11,12 @@ namespace Gof.Graphic
 
         public override void Draw(Position position)
         {
-            // Implementation specific to drawing a staff
+            Console.WriteLine($"Drawing Staff: {name} (Property: {property})");
         }
 
         public override Graphic Clone()
         {
+            Console.WriteLine($"Cloning Staff: {name}");
             return new Staff(name, property);
         }
     }
